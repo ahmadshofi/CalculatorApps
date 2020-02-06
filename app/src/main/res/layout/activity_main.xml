@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_masukan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="10"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_keluaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="20"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_masukan" />
+
+    <Button
+        android:id="@+id/btnTujuh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="90dp"
+        android:text="7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_keluaran" />
+
+    <Button
+        android:id="@+id/btnDelapan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btnTujuh"
+        app:layout_constraintTop_toTopOf="@+id/btnTujuh" />
+
+    <Button
+        android:id="@+id/btnSembilan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnDelapan"
+        app:layout_constraintTop_toTopOf="@+id/btnDelapan" />
+
+    <Button
+        android:id="@+id/btnTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnSembilan"
+        app:layout_constraintTop_toTopOf="@+id/btnSembilan" />
+
+    <Button
+        android:id="@+id/btnEmpat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/btnTujuh"
+        app:layout_constraintTop_toBottomOf="@+id/btnTujuh" />
+
+    <Button
+        android:id="@+id/btnLima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnEmpat"
+        app:layout_constraintTop_toTopOf="@id/btnEmpat" />
+
+    <Button
+        android:id="@+id/btnEnam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btnLima"
+        app:layout_constraintTop_toTopOf="@+id/btnLima" />
+
+    <Button
+        android:id="@+id/btnKurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnEnam"
+        app:layout_constraintTop_toTopOf="@id/btnEnam" />
+
+    <Button
+        android:id="@+id/btnSatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/btnEmpat"
+        app:layout_constraintTop_toBottomOf="@+id/btnEmpat" />
+
+    <Button
+        android:id="@+id/btnDua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btnSatu"
+        app:layout_constraintTop_toTopOf="@+id/btnSatu" />
+
+    <Button
+        android:id="@+id/btnTiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btnDua"
+        app:layout_constraintTop_toTopOf="@+id/btnDua" />
+
+    <Button
+        android:id="@+id/btnKali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnTiga"
+        app:layout_constraintTop_toTopOf="@id/btnTiga" />
+
+    <Button
+        android:id="@+id/btnNol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/btnSatu"
+        app:layout_constraintTop_toBottomOf="@id/btnSatu" />
+
+    <Button
+        android:id="@+id/btnKoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnNol"
+        app:layout_constraintTop_toTopOf="@id/btnNol" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnKoma"
+        app:layout_constraintTop_toTopOf="@+id/btnKoma" />
+
+    <Button
+        android:id="@+id/btnBagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnReset"
+        app:layout_constraintTop_toTopOf="@+id/btnReset" />
+
+    <Button
+        android:id="@+id/btnSamaDengan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/btnNol"
+        app:layout_constraintTop_toBottomOf="@+id/btnNol" />
+</androidx.constraintlayout.widget.ConstraintLayout>
